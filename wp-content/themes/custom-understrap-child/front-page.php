@@ -32,6 +32,18 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <main class="site-main" id="main">
 
+                <?php
+				while ( have_posts() ) {
+					the_post();
+					get_template_part( 'loop-templates/content', 'page' );
+
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) {
+						comments_template();
+					}
+				}
+				?>
+
                 <div class="logo-slider-slider">
                     <div>your content 1</div>
                     <div>your content 2</div>
@@ -42,24 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     href="<?php echo get_stylesheet_directory_uri(); ?>/images/cwl.png">Open
                     popup</a>
 
-                <?php
-				// while ( have_posts() ) {
-				// 	the_post();
-				// 	get_template_part( 'loop-templates/content', 'page' );
-
-				// 	// If comments are open or we have at least one comment, load up the comment template.
-				// 	if ( comments_open() || get_comments_number() ) {
-				// 		comments_template();
-				// 	}
-				// }
-				?>
-
             </main>
-
-            <?php
-			// Do the right sidebar check and close div#primary.
-			get_template_part( 'global-templates/right-sidebar-check' );
-			?>
 
         </div><!-- .row -->
 
