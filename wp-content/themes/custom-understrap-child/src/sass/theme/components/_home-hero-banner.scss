@@ -1,0 +1,35 @@
+.home-hero-banner {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    aspect-ratio: 80 / 51;
+
+    .blue-bg-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 830px;
+        height: 850px;
+        aspect-ratio: 83/85;
+        right: -20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        max-height: 348px;
+
+    }
+
+    .title {
+        @include font-size(48px);
+        color: $white;
+    }
+
+    .content-banner {
+        color: $white;
+    }
+}

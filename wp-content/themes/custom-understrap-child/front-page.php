@@ -15,13 +15,13 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'understrap_container_type' ); 
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div id="page-wrapper">
 
-    <div class="container-fluid" id="content" tabindex="-1">
+    <div class="container-fluid g-0" id="content" tabindex="-1">
 
         <div class="row">
 

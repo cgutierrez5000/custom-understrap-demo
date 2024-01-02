@@ -1,6 +1,6 @@
 /*!
   * Understrap v1.2.0 (https://understrap.com)
-  * Copyright 2013-2023 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
+  * Copyright 2013-2024 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
   * Licensed under GPL-3.0 (undefined)
   */
 (function (global, factory) {
@@ -6745,9 +6745,14 @@
 
 	// Add your custom JS here.
 	jQuery(document).ready(function ($) {
-	  jQuery(".my-popup").magnificPopup({
-	    type: "image"
+	  jQuery('.my-popup').magnificPopup({
+	    type: 'image'
 	  });
+
+	  //Checks for home page hero banner
+	  if (jQuery('.site-main > div:first-of-type:not(.home-hero-bannerr)').length) {
+	    jQuery('body').addClass('no-home-hero-banner');
+	  }
 	});
 
 	exports.Alert = alert;
