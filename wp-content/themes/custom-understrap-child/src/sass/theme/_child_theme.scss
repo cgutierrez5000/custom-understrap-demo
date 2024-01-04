@@ -96,7 +96,15 @@ h6,
 
 .btn.btn-primary {
   background-color: $secondary;
-  color: $white;;
+  color: $primary;
+  &:hover {
+    background-color: $link-hover-color;
+  }
+}
+
+.btn.btn-secondary{
+  background-color: $secondary;
+  color: $white;
   &:hover {
     background-color: $link-hover-color;
   }
@@ -222,6 +230,24 @@ h6,
     @include font-size(16px);
     line-height: 1.75;
   }
+}
+
+.title-underlined {
+  position: relative;
+  padding-bottom: 30px;
+  color: $primary;
+  text-transform: uppercase;
+  font-weight: 600;
+  &:after {
+    content: "";
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    background: #707070;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+}
 }
 
 

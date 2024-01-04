@@ -3,6 +3,14 @@
 /********** Grid Breakpoints **********/
 /********** Widths **********/
 /********** Colors **********/
+.blue {
+  color: #002077;
+}
+
+.yellow {
+  color: #E8BF3B;
+}
+
 /********** Fonts **********/
 .open-sans {
   font-family: "open-sans", sans-serif;

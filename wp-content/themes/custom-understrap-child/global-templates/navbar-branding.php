@@ -31,3 +31,4 @@ if ( ! has_custom_logo() ) { ?>
 } else {
 	the_custom_logo();
 }
+

@@ -27,8 +27,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <main class="site-main" id="main">
                 <?php get_template_part( 'page-templates/home-hero' );?>
-
-
+                <?php get_template_part( 'page-templates/text-panel' );?>
+                <?php get_template_part( 'page-templates/services-panel' );?>
             </main>
 
         </div><!-- .row -->
@@ -37,5 +37,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page-wrapper -->
 
-<?php
-get_footer();
+<?php get_footer(); ?>

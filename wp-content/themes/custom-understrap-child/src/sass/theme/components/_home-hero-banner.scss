@@ -27,9 +27,40 @@
     .title {
         @include font-size(48px);
         color: $white;
+        line-height: 1.25;;
     }
 
     .content-banner {
         color: $white;
+    }
+
+    .left-yellow-circle {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        left: -42px;
+        bottom:154px;;
+        width: 290px;
+        height: 286px;
+    }
+
+    .blue-lines-circle {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        right: 85px;
+        width: 514px;
+        height: 507px;
+        top:220px;
+    }
+
+    .small-yellow-circle {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        right: 85px;
+        width: 100px;
+        height: 100px;
+        top:200px;
     }
 }

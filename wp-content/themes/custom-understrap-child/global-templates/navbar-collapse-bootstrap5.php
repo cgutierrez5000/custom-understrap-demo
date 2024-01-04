@@ -9,7 +9,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod( 'understrap_container_type' );
+$container = get_theme_mod( 'understrap_container_type' ); 
 ?>
 
 <nav id="main-nav" class="navbar navbar-expand-md navbar-dark" aria-labelledby="main-nav-label">
@@ -51,6 +51,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 			)
 		);
 		?>
+
+		<?php  
+		$add_icons  = get_field('add_icons', 'options'); 
+		$menu_icons = get_field('menu_icons', 'options');
+		?>
+
+		<?php if($add_icons) : ?>
+			<ul class="list-unstyled menu-icons d-flex align-items-center mb-0">
+				<?php foreach($menu_icons as $menu_icon) : ?>
+						<li class="menu-item">
+							<a href="<?php echo $menu_icon['icon_link'];?>" 
+							class="nav-link <?php echo $menu_icon['icon']; ?>"></a>
+						</li>
+				<?php endforeach; ?>
+			</ul>
+		<?php endif; ?>
+	
+
 
 	</div><!-- .container(-fluid) -->
 

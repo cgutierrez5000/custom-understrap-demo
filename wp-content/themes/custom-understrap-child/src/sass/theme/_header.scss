@@ -1,0 +1,34 @@
+
+.site header {
+    .navbar .container {
+        width: 100%;
+        max-width: 1254px;
+    }
+    .navbar .navbar-nav {
+        a.nav-link {
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: $secondary-site-font;
+            color: $white;
+            @include font-size(18px);
+            text-transform: uppercase;
+        } 
+    }
+    .navbar .menu-icons{
+        li > a.fa-envelope{ 
+            padding: 8px 20px 8px;
+            &:before {
+                @include fa-icon;
+                color: $white;
+            }
+        }
+        li > a.fa-phone{ 
+            padding-top: 9px;
+            padding-bottom: 9px;
+            &:before {
+                @include fa-icon;
+                color: $white;
+            }
+        }
+    }
+}

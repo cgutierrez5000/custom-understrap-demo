@@ -3,6 +3,14 @@
 /********** Grid Breakpoints **********/
 /********** Widths **********/
 /********** Colors **********/
+.blue {
+  color: #002077;
+}
+
+.yellow {
+  color: #E8BF3B;
+}
+
 /********** Fonts **********/
 .open-sans {
   font-family: "open-sans", sans-serif;
@@ -15627,7 +15635,7 @@ button,
 input,
 select,
 textarea {
-  color: black;
+  color: #999999;
   font-family: "open-sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-weight: 400;
@@ -15748,9 +15756,17 @@ h6,
 
 .btn.btn-primary, .wpcf7 input.btn-primary[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.btn-primary.button, .woocommerce-info a.btn-primary.button {
   background-color: #E8BF3B;
-  color: #fff;
+  color: #002077;
 }
 .btn.btn-primary:hover, .wpcf7 input.btn-primary[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.btn-primary.button:hover, .woocommerce-info a.btn-primary.button:hover {
+  background-color: #d1a71e;
+}
+
+.btn.btn-secondary, .wpcf7 input.btn-secondary[type=submit], .woocommerce-notices-wrapper .woocommerce-message a.btn-secondary.button, .woocommerce-info a.btn-secondary.button {
+  background-color: #E8BF3B;
+  color: #fff;
+}
+.btn.btn-secondary:hover, .wpcf7 input.btn-secondary[type=submit]:hover, .woocommerce-notices-wrapper .woocommerce-message a.btn-secondary.button:hover, .woocommerce-info a.btn-secondary.button:hover {
   background-color: #d1a71e;
 }
 
@@ -15986,6 +16002,24 @@ h6,
     line-height: 1.75;
   }
 }
+.title-underlined {
+  position: relative;
+  padding-bottom: 30px;
+  color: #002077;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.title-underlined:after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  background: #707070;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
+}
+
 .has-blue-color,
 .has-blue-color:visited {
   color: #0d6efd;
@@ -16414,8 +16448,84 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   border: 1px solid #e9ecef;
 }
 
+.site header .navbar .container {
+  width: 100%;
+  max-width: 1254px;
+}
+.site header .navbar .navbar-nav a.nav-link {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "raleway", sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+.site header .navbar .menu-icons li > a.fa-envelope {
+  padding: 8px 20px 8px;
+}
+.site header .navbar .menu-icons li > a.fa-envelope:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+.site header .navbar .menu-icons li > a.fa-phone {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.site header .navbar .menu-icons li > a.fa-phone:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+
 .blog .entry-title a {
   text-decoration: none;
+}
+
+.site header .navbar .container {
+  width: 100%;
+  max-width: 1254px;
+}
+.site header .navbar .navbar-nav a.nav-link {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: "raleway", sans-serif;
+  color: #fff;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+.site header .navbar .menu-icons li > a.fa-envelope {
+  padding: 8px 20px 8px;
+}
+.site header .navbar .menu-icons li > a.fa-envelope:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+.site header .navbar .menu-icons li > a.fa-phone {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.site header .navbar .menu-icons li > a.fa-phone:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
 }
 
 .home-hero-banner {
@@ -16444,6 +16554,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .home-hero-banner .title {
   font-size: calc(1.425rem + 2.1vw);
   color: #fff;
+  line-height: 1.25;
 }
 @media (min-width: 1200px) {
   .home-hero-banner .title {
@@ -16452,6 +16563,104 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 }
 .home-hero-banner .content-banner {
   color: #fff;
+}
+.home-hero-banner .left-yellow-circle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: -42px;
+  bottom: 154px;
+  width: 290px;
+  height: 286px;
+}
+.home-hero-banner .blue-lines-circle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 85px;
+  width: 514px;
+  height: 507px;
+  top: 220px;
+}
+.home-hero-banner .small-yellow-circle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 85px;
+  width: 100px;
+  height: 100px;
+  top: 200px;
+}
+
+.text-panel {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.text-panel .title {
+  position: relative;
+  padding-bottom: 30px;
+}
+.text-panel .title::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  background: #707070;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 16px;
+}
+.text-panel .float-right-arrow {
+  display: block;
+  width: 59px;
+  height: 90px;
+  right: -70px;
+  bottom: -70px;
+}
+.text-panel .float-blue-left-graphic {
+  display: block;
+  width: 514px;
+  height: 507px;
+  left: -64px;
+  bottom: -100px;
+  z-index: 2;
+}
+
+.text-panel.add-bg-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-panel {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #F6F9FF;
+}
+.services-panel .services-grid {
+  display: grid;
+  grid-template-areas: "left-side right-side";
+  grid-template-columns: 1fr 2fr;
+}
+.services-panel .left-side {
+  grid-area: left-side;
+  padding-right: 70px;
+}
+.services-panel .right-side {
+  grid-area: right-side;
+}
+.services-panel .right-side .service-container {
+  padding: 15px;
+}
+.services-panel .right-side .service-container .title {
+  font-size: calc(1.275rem + 0.3vw);
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .services-panel .right-side .service-container .title {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=child-theme.css.map */

@@ -24,7 +24,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1170px,
+  xxl: 1170px, 
 );
 
 /********** Colors **********/
@@ -33,6 +33,20 @@ $secondary: #E8BF3B;
 $link-color: $secondary;
 $link-hover-color: #d1a71e;
 $gradient: linear-gradient(180deg, rgba(purple, 0.15), rgba(purple, 0));
+
+@mixin blue {
+  color: $primary;
+}
+.blue {
+  @include blue;
+}
+
+@mixin yellow {
+  color: $secondary;
+}
+.yellow {
+  @include yellow;
+}
 
 /********** Fonts **********/
 $font-family-sans-serif: "open-sans",sans-serif;
@@ -64,7 +78,7 @@ $font-weight-bolder: 800;
 
 /********** Global Settings **********/
 $body-bg: white;
-$text-color: black;
+$text-color: #999999;
 $font-size-base: 1rem;
 $line-height-base: 1.2;
 

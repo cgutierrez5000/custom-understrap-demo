@@ -1,0 +1,41 @@
+.text-panel {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    .title {
+        position: relative;
+        padding-bottom: 30px;
+        &::after {
+            content: "";
+            width: 100px;
+            height: 1px;
+            position: absolute;
+            background: #707070;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 16px;
+        }
+    }
+
+    .float-right-arrow {
+        display: block;
+        width: 59px;
+        height:90px;
+        right: -70px;
+        bottom: -70px;
+    }
+
+    .float-blue-left-graphic {
+        display: block;
+        width: 514px;
+        height:507px;
+        left: -64px;
+        bottom: -100px;
+        z-index: 2;
+    }
+}
+
+.text-panel.add-bg-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

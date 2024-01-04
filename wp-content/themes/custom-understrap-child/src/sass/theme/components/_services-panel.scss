@@ -1,0 +1,28 @@
+.services-panel {
+    padding-top:100px;
+    padding-bottom: 100px;
+    background-color: #F6F9FF;
+    .services-grid {
+        display: grid;
+        grid-template-areas:
+            'left-side right-side';
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .left-side {
+        grid-area: left-side;
+        padding-right: 70px;
+    }
+    .right-side {
+        grid-area: right-side;
+        .service-container {
+            padding: 15px;
+            .title {
+                @include font-size(24px);
+                padding-top: 40px;
+                padding-bottom: 30px;
+            }
+        }
+
+    }
+}
