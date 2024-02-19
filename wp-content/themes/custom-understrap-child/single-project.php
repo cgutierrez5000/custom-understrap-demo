@@ -1,8 +1,6 @@
 <?php
 /**
- * The header for our theme
- *
- * Displays all of the <head> section and everything up till <div id="content">
+ * The template for displaying all Project Posts
  *
  * @package Understrap
  */
@@ -24,16 +22,30 @@ $navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
-<?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
+	<?php do_action( 'wp_body_open' ); 
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<header id="wrapper-navbar" class="fixed-top">
+	$project_image = get_field('project_image');
+	$text_field    = get_field('text_field');
 
-		<a class="skip-link <?php echo understrap_get_screen_reader_class( true ); ?>" href="#content">
-			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
-		</a>
+	?>
 
-		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+<body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
+	<?php do_action( 'wp_body_open' ); ?>
 
-	</header><!-- #wrapper-navbar --> 
+<div class="single-project">
+	<div class="inner d-flex flex-wrap">
+		<div class="left-panel w-50">
+			<img src="<?php echo $project_image['url']; ?>" 
+			     alt="<?php echo $project_image['alt']; ?>"
+				 class="">
+		</div>
+		<div class="right-panel w-50">
+			<?php echo $text_field; ?>
+		</div>
+	</div>
+</div>
+
+</body>
+	<?php wp_footer(); ?>   
+</html>
+

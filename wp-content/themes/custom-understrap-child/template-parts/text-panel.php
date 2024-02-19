@@ -1,7 +1,7 @@
 <?php
 /**
  * Text panel template
- *
+ * 
  * 
  */
 $tp_title             = get_field('tp_title');
@@ -40,5 +40,5 @@ $tp_float_b_l_graphic = get_field('tp_float_b_l_graphic');
     </div>
     <div class="float-blue-left-graphic position-absolute" 
 	     style="background-image: url('<?php echo $tp_float_b_l_graphic['url']; ?>')">
-	    </div>
+	</div>
 </div>

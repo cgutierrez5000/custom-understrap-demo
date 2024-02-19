@@ -100,4 +100,11 @@ function understrap_child_customize_controls_js() {
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
 
-/** Adds menu icons**/
+
+/**
+ * ADD IMAGE SIZES
+ *********************************************************************** */
+if (function_exists('add_image_size')) {
+    add_image_size('project_slider_thumb', 370, 308, true);
+
+}

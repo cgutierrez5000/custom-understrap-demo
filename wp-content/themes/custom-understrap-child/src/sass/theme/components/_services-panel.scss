@@ -12,6 +12,13 @@
     .left-side {
         grid-area: left-side;
         padding-right: 70px;
+        .img-over-text {
+            padding: 20px;
+            background-color: rgba(0, 32, 119, 0.66);
+            color: $white;
+            text-transform: capitalize;
+            @include font-size(24px);
+        }
     }
     .right-side {
         grid-area: right-side;
@@ -25,4 +32,4 @@
         }
 
     }
-}
+} 

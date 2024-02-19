@@ -26,9 +26,10 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="row">
 
             <main class="site-main" id="main">
-                <?php get_template_part( 'page-templates/home-hero' );?>
-                <?php get_template_part( 'page-templates/text-panel' );?>
-                <?php get_template_part( 'page-templates/services-panel' );?>
+                <?php get_template_part( 'template-parts/home-hero' );?>
+                <?php get_template_part( 'template-parts/text-panel' );?>
+                <?php get_template_part( 'template-parts/services-panel' );?>
+                <?php get_template_part( 'template-parts/project-slider' );?>
             </main>
 
         </div><!-- .row -->

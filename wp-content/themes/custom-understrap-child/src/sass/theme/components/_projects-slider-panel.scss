@@ -1,0 +1,113 @@
+.projects-slider-panel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .slick-list {
+        margin: 0 -15px;
+    }
+
+    .slick-slide {
+        margin: 0 15px;
+    }
+
+    .ps-floating-img {
+        left: -100px;
+        top: 0px;
+    }
+    .project-title {
+        margin-bottom: 0px;   
+    }
+
+    .img-over-text {
+        padding: 20px;
+        background-color: rgba(0, 32, 119, 0.66);
+        color: $white;
+        text-transform: capitalize;
+        @include font-size(24px);
+    }
+
+    .project-slider-inner-hover {
+        top: 100%;
+        transition: all 0.2s;
+        padding: 20px;
+        background-color: rgb(160, 129, 28, 0.80);
+        color: $white;
+        .project-title-hover {
+            text-transform: capitalize;
+            margin-bottom: 22px;
+            @include font-size(24px);
+            line-height: 22px;
+        }
+
+        .read-more-link {
+            text-decoration: none;
+        }
+
+        .fa-external-link:after {
+            @include fa-icon;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    .project-slider-inner:hover .project-slider-inner-hover {
+        top: 0%;
+    }
+    .project-slider-inner:hover {
+        .project-title {
+            display: none;
+        }
+    }
+
+    .fa-chevron-left:before {
+        @include fa-icon;
+        @include font-size(32px);
+        color: #D7E2F8;
+        font-weight: 200;
+
+    }
+    .fa-chevron-right:before {
+        @include fa-icon;
+        @include font-size(32px);
+        color: #D7E2F8;
+        font-weight: 200;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 9999px;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        top: 50%;
+        transform:translateY(-50%);
+        z-index: 1;
+        &.prev-arrow {
+          left: -40px ;
+        }
+        &.next-arrow {
+          right: -40px;
+        }
+      }
+      
+      .slick-dots:extend(.no-list) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      
+        li {
+          display: inline-block;
+          margin: 0 9px;
+        }
+      
+        li.slick-active button {
+          border-color: red;
+        }
+      }
+      
+
+}

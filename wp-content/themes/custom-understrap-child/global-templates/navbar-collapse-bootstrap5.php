@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' ); 
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-md navbar-dark" aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
@@ -72,4 +72,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	</div><!-- .container(-fluid) -->
 
-</nav><!-- #main-nav -->
+</nav><!-- #main-nav --> 

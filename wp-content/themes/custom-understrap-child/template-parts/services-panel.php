@@ -18,9 +18,14 @@ $services          = get_field('services');
             </h2>
             <div class="services-grid">
                 <div class="left-side">
-                    <img class="card-img-top" 
-                        src="<?php echo $serv_l_img_banner['url'];?>" 
-                        alt="<?php echo $serv_l_img_banner['alt'];?>">
+                    <div class="image-container position-relative">
+                        <img class="card-img-top" 
+                            src="<?php echo $serv_l_img_banner['url'];?>" 
+                            alt="<?php echo $serv_l_img_banner['alt'];?>">
+                        <div class="img-over-text position-absolute bottom-0 raleway text-center fw-semibold w-100">
+                            <?php echo $serv_l_img_text; ?>
+                        </div>
+                    </div>
                 </div>
                 <div class="right-side d-flex flex-wrap">
 
@@ -41,5 +46,5 @@ $services          = get_field('services');
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </div>
